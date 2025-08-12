@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Krexx Nv — Electronic Press Kit</title>
+  <meta name="description" content="Concise EPK for Krexx Nv — bio, music, videos, press, and contacts." />
+  <meta name="theme-color" content="#0b0b0b" />
+  <!-- Important: stop sending referrers so ytimg loads everywhere -->
+  <meta name="referrer" content="no-referrer">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Krexx Nv — Electronic Press Kit" />
+  <meta property="og:description" content="Bio, music, videos, press, and contacts." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://krexxnv.com/images/kx32.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://krexxnv.com/images/kx32.jpeg" />
+
+  <!-- Fonts / Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root{
+      --brand-cyan:#00e0e0;
+      --bg:#0b0b0b;
+      --ink:#e5e5e5;
+      --muted:#a3a3a3;
+    }
+    body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink);}
+    .brand-cyan{color:var(--brand-cyan);}
+    .bg-brand-cyan{background-color:var(--brand-cyan);}
+    .text-brand-cyan{color:var(--brand-cyan);}
+    .nav-link{transition:color .2s;}
+    .nav-link:hover{color:var(--brand-cyan);}
+    .section-title{font-weight:800;font-size:1.875rem;letter-spacing:-.01em;}
+    @media(min-width:768px){.section-title{font-size:2.5rem;}}
+    .press-logo{transition:transform .2s, filter .2s;filter:grayscale(60%) opacity(.7);}
+    .press-logo:hover{transform:translateY(-2px);filter:none;}
+    .video-play::before{
+      content:'▶';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+      font-size:3rem;color:#fff;background:rgba(0,0,0,.45);width:64px;height:64px;border-radius:50%;
+      display:flex;align-items:center;justify-content:center;padding-left:4px;transition:transform .2s,background .2s;
+    }
+    .video-card:hover .video-play::before{transform:translate(-50%,-50%) scale(1.06);background:var(--brand-cyan);}
+    .award-card{border:1px solid #242424;transition:transform .2s, box-shadow .2s;}
+    .award-card:hover{transform:translateY(-3px);box-shadow:0 10px 20px rgba(0,224,224,.08);}
+    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;}
+    .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;padding:.5rem .75rem;background:#000;color:#fff;border:1px solid #333;border-radius:.375rem;z-index:50;}
+    /* Stable, crisp video thumbs */
+    .thumb{aspect-ratio:16/9;object-fit:cover;background:#0f0f0f;}
+    /* Print */
+    @media print{
+      @page{margin:12mm;}
+      header,footer,.video-play::before{display:none!important;}
+      body{background:#fff;color:#111827;}
+      a{color:#111827;text-decoration:underline;}
+      .container{max-width:100%!important;}
+    }
+  </style>
+</head>
+<body class="antialiased">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Header (quiet) -->
+  <header class="sticky top-0 z-40 bg-black/80 backdrop-blur-sm">
+    <nav class="container mx-auto px-6 py-3 flex items-center justify-between">
+      <a href="#hero" class="text-lg md:text-xl font-semibold tracking-tight">Krexx Nv</a>
+      <div class="hidden md:flex items-center gap-6">
+        <a class="nav-link text-sm" href="#bio">Bio</a>
+        <a class="nav-link text-sm" href="#music">Music</a>
+        <a class="nav-link text-sm" href="#videos">Videos</a>
+        <a class="nav-link text-sm" href="#press">Press</a>
+        <a class="nav-link text-sm" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero (understated) -->
+  <section id="hero" class="border-b border-neutral-800">
+    <div class="container mx-auto px-6 py-10 md:py-14">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+        <div>
+          <h1 class="text-2xl md:text-4xl font-bold tracking-tight">Krexx Nv</h1>
+          <p class="mt-1 text-neutral-400">Afro-fusion artist — Lagos, Nigeria</p>
+        </div>
+        <div class="flex gap-3">
+          <a href="#music" class="inline-flex items-center px-4 py-2 rounded-md bg-neutral-800 hover:bg-neutral-700 text-sm">Stream highlights</a>
+          <a href="#contact" class="inline-flex items-center px-4 py-2 rounded-md bg-brand-cyan text-black font-semibold text-sm hover:bg-white">Bookings</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- Bio -->
+    <section id="bio" class="py-14 md:py-20">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-5 gap-10 items-center">
+          <div class="md:col-span-2">
+            <img
+              src="https://krexxnv.com/images/kx32.jpeg"
+              alt="Krexx Nv — professional portrait"
+              class="rounded-lg shadow-2xl w-full"
+              loading="lazy">
+          </div>
+          <div class="md:col-span-3">
+            <h2 class="section-title mb-4">Profile</h2>
+            <div class="space-y-4 text-neutral-300 leading-relaxed">
+              <p><strong>Honest Ornan Okoawo</strong> (Krexx Nv) is a Nigerian Afro-fusion artist from Edo State. Active since 2012, his work blends Afrobeats, Hip-Hop, and R&amp;B with precise writing and lived-city realism.</p>
+              <p>After a label dispute pulled his catalog from DSPs, he rebuilt independently and founded <em>Nimble Nova Entertainment</em>—resulting in a tighter catalog, sharper voice, and full creative control.</p>
+              <p>Recent projects include <em>INTEL (Inside The Eko Life)</em> and the EP <em>Body Mind &amp; Soul</em>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Music -->
+    <section id="music" class="py-14 md:py-20 bg-neutral-900/50">
+      <div class="container mx-auto px-6">
+        <h2 class="section-title text-center mb-12">Selected Releases</h2>
+
+        <!-- INTEL -->
+        <div class="mb-16">
+          <div class="grid md:grid-cols-3 gap-8">
+            <div>
+              <img src="https://cdn-images.dzcdn.net/images/cover/9bf21fe6c49f5b98269302731b6ea774/1900x1900-000000-80-0-0.jpg"
+                   alt="INTEL (Inside The Eko Life) cover" class="rounded-lg shadow-2xl w-full mb-3" loading="lazy">
+              <h3 class="text-2xl font-semibold">INTEL</h3>
+              <p class="text-sm text-neutral-400">Inside The Eko Life • 2024 • Nimble Nova Entertainment Ltd</p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <a href="https://music.apple.com/ng/album/intel-inside-the-eko-life/1824506045" target="_blank" rel="noopener noreferrer" class="px-3 py-1 rounded-full bg-neutral-800 text-xs hover:bg-neutral-700">Apple Music</a>
+                <a href="https://open.spotify.com/album/27v0mFXY5hjNEDmc12Oaip?si=OR7-Wj7QT_6vSZKehJyJPg" target="_blank" rel="noopener noreferrer" class="px-3 py-1 rounded-full bg-neutral-800 text-xs hover:bg-neutral-700">Spotify</a>
+                <a href="https://tidal.com/browse/album/445925767?u" target="_blank" rel="noopener noreferrer" class="px-3 py-1 rounded-full bg-neutral-800 text-xs hover:bg-neutral-700">Tidal</a>
+                <a href="https://www.boomplay.com/share/album/93142586?srModel=COPYLINK&srList=IOS" target="_blank" rel="noopener noreferrer" class="px-3 py-1 rounded-full bg-neutral-800 text-xs hover:bg-neutral-700">Boomplay</a>
+              </div>
+            </div>
+            <div class="md:col-span-2 flex items-center">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/27v0mFXY5hjNEDmc12Oaip?utm_source=generator&theme=0" width="100%" height="300" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Spotify player: INTEL"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Body Mind & Soul -->
+        <div class="mb-16">
+          <div class="grid md:grid-cols-3 gap-8">
+            <div>
+              <img src="https://images.genius.com/37c97dec8bb100ba4fb885b9eb48bdef.1000x1000x1.jpg"
+                   alt="Body Mind & Soul cover" class="rounded-lg shadow-2xl w-full mb-3" loading="lazy">
+              <h3 class="text-2xl font-semibold">Body Mind &amp; Soul</h3>
+              <p class="text-sm text-neutral-400">EP • 2024</p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <a href="https://open.spotify.com/album/3dDJbaXfHHFndLUOdeJDQA?si=U6aHUBjXSQqKa01jEhzuxA" target="_blank" rel="noopener noreferrer" class="px-3 py-1 rounded-full bg-neutral-800 text-xs hover:bg-neutral-700">Spotify</a>
+                <a href="https://music.apple.com/ng/album/body-mind-soul-single/1825189805" target="_blank" rel="noopener noreferrer" class="px-3 py-1 rounded-full bg-neutral-800 text-xs hover:bg-neutral-700">Apple Music</a>
+                <a href="https://tidal.com/browse/album/446584061?u" target="_blank" rel="noopener noreferrer" class="px-3 py-1 rounded-full bg-neutral-800 text-xs hover:bg-neutral-700">Tidal</a>
+              </div>
+            </div>
+            <div class="md:col-span-2 flex items-center">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3dDJbaXfHHFndLUOdeJDQA?utm_source=generator&theme=0" width="100%" height="300" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Spotify player: Body Mind & Soul"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Dungeon's Depths -->
+        <div>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div>
+              <img src="https://source.boomplaymusic.com/group10/M00/06/11/10d4e51d7eb848aba23008d775fe2e17H3000W3000_320_320.jpg"
+                   alt="The Dungeon's Depths cover" class="rounded-lg shadow-2xl w-full mb-3" loading="lazy">
+              <h3 class="text-2xl font-semibold">The Dungeon's Depths</h3>
+              <p class="text-sm text-neutral-400">Album • 2022 • Independent</p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <a href="https://open.spotify.com/album/6iZsgyeeJJG2lV9mengGJW?si=VrhQwnfjRKyVX0HxLOZDjw" target="_blank" rel="noopener noreferrer" class="px-3 py-1 rounded-full bg-neutral-800 text-xs hover:bg-neutral-700">Spotify</a>
+                <a href="https://tidal.com/browse/album/441412388?u" target="_blank" rel="noopener noreferrer" class="px-3 py-1 rounded-full bg-neutral-800 text-xs hover:bg-neutral-700">Tidal</a>
+                <a href="https://www.boomplay.com/share/album/111999311?srModel=COPYLINK&srList=IOS" target="_blank" rel="noopener noreferrer" class="px-3 py-1 rounded-full bg-neutral-800 text-xs hover:bg-neutral-700">Boomplay</a>
+              </div>
+            </div>
+            <div class="md:col-span-2 flex items-center">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6iZsgyeeJJG2lV9mengGJW?utm_source=generator&theme=0" width="100%" height="300" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Spotify player: The Dungeon's Depths"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recognition -->
+    <section id="awards" class="py-14 md:py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="section-title text-center mb-10">Recognition</h2>
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div class="award-card bg-neutral-900/50 p-6 rounded-lg text-center">
+            <h3 class="text-base font-semibold text-brand-cyan">Most Promising Artiste</h3>
+            <p class="text-neutral-400 text-sm">Top Naija Music Awards • 2019</p>
+          </div>
+          <div class="award-card bg-neutral-900/50 p-6 rounded-lg text-center">
+            <h3 class="text-base font-semibold text-brand-cyan">Best Vocal Performance</h3>
+            <p class="text-neutral-400 text-sm">DTME Awards (“Hello”) • 2024</p>
+          </div>
+          <div class="award-card bg-neutral-900/50 p-6 rounded-lg text-center">
+            <h3 class="text-base font-semibold text-brand-cyan">Best Edo Young Musician</h3>
+            <p class="text-neutral-400 text-sm">Edo Festival & Awards (Nom.) • 2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Videos (robust thumbnails) -->
+    <section id="videos" class="py-14 md:py-20 bg-neutral-900/50">
+      <div class="container mx-auto px-6">
+        <h2 class="section-title text-center mb-12">Videos</h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+
+          <!-- The Invite -->
+          <a href="https://youtu.be/LX9GEuXQVcA?si=Qj2RyoQk1Cidi7XL"
+             target="_blank" rel="noopener noreferrer"
+             class="video-card block rounded-lg overflow-hidden relative shadow-lg"
+             aria-label="Watch The Invite on YouTube">
+            <img
+              class="thumb w-full rounded-none yt-thumb"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              data-ytid="LX9GEuXQVcA"
+              alt="Thumbnail — The Invite"
+              referrerpolicy="no-referrer"
+              loading="lazy">
+            <div class="absolute inset-0 bg-black/30"></div>
+            <span class="video-play absolute inset-0"></span>
+            <h3 class="absolute bottom-4 left-4 text-white text-xl font-semibold">The Invite</h3>
+          </a>
+
+          <!-- Reason -->
+          <a href="https://youtu.be/rxT8jT0QZGM?si=VJAvc_CN4MRzp29z"
+             target="_blank" rel="noopener noreferrer"
+             class="video-card block rounded-lg overflow-hidden relative shadow-lg"
+             aria-label="Watch Reason on YouTube">
+            <img
+              class="thumb w-full rounded-none yt-thumb"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              data-ytid="rxT8jT0QZGM"
+              alt="Thumbnail — Reason (feat. Shi Boi)"
+              referrerpolicy="no-referrer"
+              loading="lazy">
+            <div class="absolute inset-0 bg-black/30"></div>
+            <span class="video-play absolute inset-0"></span>
+            <h3 class="absolute bottom-4 left-4 text-white text-xl font-semibold">Reason (feat. Shi Boi)</h3>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Press -->
+    <section id="press" class="py-14 md:py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="section-title text-center mb-10">Press</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-10 items-center justify-items-center max-w-6xl mx-auto">
+          <a href="https://www.vanguardngr.com/singer-krexx-nv-sets-new-standard-with-musical-uniqueness" target="_blank" rel="noopener noreferrer" class="press-logo text-sm font-semibold text-neutral-300 text-center">Vanguard</a>
+          <a href="https://leadership.ng/krexx-nv-musical-maverick-storming-the-nigerian-music-industry" target="_blank" rel="noopener noreferrer" class="press-logo text-sm font-semibold text-neutral-300 text-center">Leadership</a>
+          <a href="https://www.thisdaylive.com/index.php/2024/08/11/krexx-nv-creates-masterpiece-with-debut-album-intel" target="_blank" rel="noopener noreferrer" class="press-logo text-sm font-semibold text-neutral-300 text-center">THISDAY</a>
+          <a href="https://medium.com/@nimblenovaent/inside-the-eko-life-intel-by-krexx-nv-7-raw-lagos-realities-told-through-b8670573934d" target="_blank" rel="noopener noreferrer" class="press-logo text-sm font-semibold text-neutral-300 text-center">Medium</a>
+          <a href="https://thenationonlineng.net/krexx-nv-gets-accolades-for-music-performance/" target="_blank" rel="noopener noreferrer" class="press-logo text-sm font-semibold text-neutral-300 text-center">The Nation</a>
+        </div>
+
+        <!-- Optional: Press photos -->
+        <div class="mt-10 max-w-5xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-6">
+            <img src="https://krexxnv.com/images/kx32.jpeg" alt="Krexx Nv portrait (press)" class="w-full rounded-lg shadow-lg" loading="lazy">
+            <img src="https://cdn.pmnewsnigeria.com/wp-content/uploads/2024/09/e010352f-41ff-4b24-95e8-6813e40efd94.jpeg" alt="Krexx Nv performing — press-ready" class="w-full rounded-lg shadow-lg" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-14 md:py-20 bg-neutral-900/50">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="section-title mb-6">Contact</h2>
+        <p class="text-neutral-300 mb-6 max-w-xl mx-auto">Bookings, press, or collaborations.</p>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
+          <a href="mailto:info@krexxnv.com" class="text-lg hover:text-brand-cyan transition-colors">info@krexxnv.com</a>
+          <span class="hidden md:block text-neutral-500" aria-hidden="true">|</span>
+          <a href="tel:+2349167628105" class="text-lg hover:text-brand-cyan transition-colors">+234&nbsp;916&nbsp;762&nbsp;8105</a>
+        </div>
+        <a href="https://krexxnv.com" target="_blank" rel="noopener noreferrer" class="inline-block bg-brand-cyan text-black font-semibold py-3 px-8 rounded-lg hover:bg-white transition-colors">Visit Official Website</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-8 bg-black">
+    <div class="container mx-auto px-6 text-center text-neutral-500">
+      <p>&copy; <span id="year"></span> Krexx Nv. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Robust YouTube thumbnail loader -->
+  <script>
+    (function(){
+      const variants = ['maxresdefault.jpg','sddefault.jpg','hqdefault.jpg','mqdefault.jpg','default.jpg'];
+      function tryLoad(img, id, i=0){
+        if(i >= variants.length) return;
+        const url = `https://i.ytimg.com/vi/${id}/${variants[i]}`;
+        const probe = new Image();
+        probe.referrerPolicy = 'no-referrer';
+        probe.onload = () => { img.src = url; };
+        probe.onerror = () => tryLoad(img, id, i+1);
+        // cache-bust to avoid stale 404s
+        probe.src = url + `?t=${Date.now()}`;
+      }
+      document.addEventListener('DOMContentLoaded', ()=>{
+        document.querySelectorAll('img.yt-thumb[data-ytid]').forEach(img=>{
+          tryLoad(img, img.dataset.ytid);
+        });
+      });
+    })();
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
